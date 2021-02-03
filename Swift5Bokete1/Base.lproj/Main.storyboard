@@ -40,6 +40,9 @@
                                 <state key="normal" title="次のお題へ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextOdai:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yY0-3D-cpA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nb-Ue-dqS">
                                 <rect key="frame" x="56" y="779" width="303" height="47"/>
@@ -47,11 +50,17 @@
                                 <state key="normal" title="決定">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f86-4Z-uOL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLi-Ni-e2U">
                                 <rect key="frame" x="309" y="102" width="50" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="search"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUU-SD-oen"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -61,16 +70,17 @@
                         <outlet property="commentTextView" destination="CGl-z9-Jq6" id="mdZ-UZ-TZs"/>
                         <outlet property="odaiImageView" destination="5rC-0Q-r7F" id="l4U-Xy-hJh"/>
                         <outlet property="searchTextField" destination="yGd-JR-Q63" id="ah8-Dd-Ewl"/>
+                        <segue destination="BoS-ZH-9Sg" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="YUC-io-dKl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="EKT-ZT-7RH">
             <objects>
-                <viewController id="BoS-ZH-9Sg" sceneMemberID="viewController">
+                <viewController id="BoS-ZH-9Sg" customClass="ShareViewController" customModule="Swift5Bokete1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJo-0U-Low">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

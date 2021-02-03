@@ -28,12 +28,19 @@ class ViewController: UIViewController {
         PHPhotoLibrary.requestAuthorization { (status) in
             
             switch(status){
-                case .authorized: break
-                case .denied: break
-                case .notDetermined: break
-                case .restricted: break
+            
+            case .authorized: break
+            case .denied: break
+            case .notDetermined: break
+            case .restricted: break
+            @unknown default:
+                break
             }
+            
         }
+        
+        getImages(keyword: "funny")
+        
         
     }
     
@@ -53,7 +60,9 @@ class ViewController: UIViewController {
             switch response.result{
             
             case .success:
+                //データーを取得
                 let json:JSON = JSON(response.data as Any)
+                //取得したい部分を記述
                 let imageString = json["hits"][self.count]["webformatURL"].string
                 self.odaiImageView.sd_setImage(with: URL(string: imageString!), completed: nil)
                 
@@ -66,11 +75,43 @@ class ViewController: UIViewController {
             }
             
         }
-        //値が返ってきて、それをJSONで解析を行う。
+       
+    }
+    
+    
+    @IBAction func nextOdai(_ sender: Any) {
         
-        //imageView.imageに貼り付ける
+        count = count + 1
+        
+        if searchTextField.text == ""{
+            
+            getImages(keyword: "funny")
+            
+        }else{
+            getImages(keyword: searchTextField.text!)
+        }
         
     }
+    
+    @IBAction func searchAction(_ sender: Any) {
+        
+        self.count = 0
+        if searchTextField.text == ""{
+            
+            getImages(keyword: "funny")
+            
+        }else{
+            getImages(keyword: searchTextField.text!)
+        }
+        
+    }
+    
+    @IBAction func next(_ sender: Any) {
+        
+        performSegue(withIdentifier: "next", sender: nil)
+        
+    }
+    
     
     
 }

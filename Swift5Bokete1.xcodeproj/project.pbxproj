@@ -13,6 +13,7 @@
 		CDBB206225CAC15500C74950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBB206025CAC15500C74950 /* Main.storyboard */; };
 		CDBB206425CAC15800C74950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBB206325CAC15800C74950 /* Assets.xcassets */; };
 		CDBB206725CAC15800C74950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBB206525CAC15800C74950 /* LaunchScreen.storyboard */; };
+		CDBB207925CAFEB500C74950 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB207825CAFEB500C74950 /* ShareViewController.swift */; };
 		F3F832B85584579E3D005D52 /* Pods_Swift5Bokete1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376CB03C0C3EAE860C3E07AA /* Pods_Swift5Bokete1.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		CDBB206325CAC15800C74950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBB206625CAC15800C74950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBB206825CAC15800C74950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBB207825CAFEB500C74950 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		FD5AF7F4CAF7D2BDF1DC96DB /* Pods-Swift5Bokete1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5Bokete1.debug.xcconfig"; path = "Target Support Files/Pods-Swift5Bokete1/Pods-Swift5Bokete1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				CDBB205A25CAC15500C74950 /* AppDelegate.swift */,
 				CDBB205C25CAC15500C74950 /* SceneDelegate.swift */,
 				CDBB205E25CAC15500C74950 /* ViewController.swift */,
+				CDBB207825CAFEB500C74950 /* ShareViewController.swift */,
 				CDBB206025CAC15500C74950 /* Main.storyboard */,
 				CDBB206325CAC15800C74950 /* Assets.xcassets */,
 				CDBB206525CAC15800C74950 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			files = (
 				CDBB205F25CAC15500C74950 /* ViewController.swift in Sources */,
 				CDBB205B25CAC15500C74950 /* AppDelegate.swift in Sources */,
+				CDBB207925CAFEB500C74950 /* ShareViewController.swift in Sources */,
 				CDBB205D25CAC15500C74950 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
