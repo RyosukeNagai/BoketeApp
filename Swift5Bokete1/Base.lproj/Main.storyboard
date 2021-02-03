@@ -104,6 +104,9 @@
                                 <rect key="frame" x="76" y="713" width="261" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="シェアする"/>
+                                <connections>
+                                    <action selector="share:" destination="BoS-ZH-9Sg" eventType="touchUpInside" id="0GS-bH-7Xb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ep6-4s-QXJ">
                                 <rect key="frame" x="76" y="768" width="261" height="47"/>

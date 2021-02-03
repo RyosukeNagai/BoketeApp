@@ -22,7 +22,34 @@ class ShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        resultImageView.image = resultImage
+        commentLabel.text = commentString
+        //フォントサイズの調整
+        commentLabel.adjustsFontSizeToFitWidth = true
         
+    }
+    
+    @IBAction func share(_ sender: Any) {
+        
+        //スクリーンショットを撮る
+        takeScreenShot()
+        //アクティビティビューに載せてシェアする
+        
+        
+        
+    }
+    
+    func takeScreenShot(){
+        
+        let width = CGFloat(UIScreen.main.bounds.size.width)
+        let height = CGFloat(UIScreen.main.bounds.size.height/1.3)
+        let size = CGSize(width: width, height: height)
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        //viewに書き出す
+        self.view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        screenShotImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
         
     }
     
