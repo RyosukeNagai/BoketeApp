@@ -13,9 +13,12 @@
 		CDBB206225CAC15500C74950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBB206025CAC15500C74950 /* Main.storyboard */; };
 		CDBB206425CAC15800C74950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBB206325CAC15800C74950 /* Assets.xcassets */; };
 		CDBB206725CAC15800C74950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBB206525CAC15800C74950 /* LaunchScreen.storyboard */; };
+		F3F832B85584579E3D005D52 /* Pods_Swift5Bokete1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376CB03C0C3EAE860C3E07AA /* Pods_Swift5Bokete1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		376CB03C0C3EAE860C3E07AA /* Pods_Swift5Bokete1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5Bokete1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D9DD20DB119B4C8FF0CB4E /* Pods-Swift5Bokete1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5Bokete1.release.xcconfig"; path = "Target Support Files/Pods-Swift5Bokete1/Pods-Swift5Bokete1.release.xcconfig"; sourceTree = "<group>"; };
 		CDBB205725CAC15500C74950 /* Swift5Bokete1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift5Bokete1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBB205A25CAC15500C74950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDBB205C25CAC15500C74950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CDBB206325CAC15800C74950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBB206625CAC15800C74950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBB206825CAC15800C74950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5AF7F4CAF7D2BDF1DC96DB /* Pods-Swift5Bokete1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5Bokete1.debug.xcconfig"; path = "Target Support Files/Pods-Swift5Bokete1/Pods-Swift5Bokete1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F832B85584579E3D005D52 /* Pods_Swift5Bokete1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A40CD5241BA07CC281B52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD5AF7F4CAF7D2BDF1DC96DB /* Pods-Swift5Bokete1.debug.xcconfig */,
+				56D9DD20DB119B4C8FF0CB4E /* Pods-Swift5Bokete1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B99481E13F2B61BEABC8929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376CB03C0C3EAE860C3E07AA /* Pods_Swift5Bokete1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CDBB204E25CAC15500C74950 = {
 			isa = PBXGroup;
 			children = (
 				CDBB205925CAC15500C74950 /* Swift5Bokete1 */,
 				CDBB205825CAC15500C74950 /* Products */,
+				00A40CD5241BA07CC281B52A /* Pods */,
+				8B99481E13F2B61BEABC8929 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDBB206B25CAC15800C74950 /* Build configuration list for PBXNativeTarget "Swift5Bokete1" */;
 			buildPhases = (
+				6D18C6142452B110307A5309 /* [CP] Check Pods Manifest.lock */,
 				CDBB205325CAC15500C74950 /* Sources */,
 				CDBB205425CAC15500C74950 /* Frameworks */,
 				CDBB205525CAC15500C74950 /* Resources */,
+				DCCA1CFAA0F8DE7800C0A508 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D18C6142452B110307A5309 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift5Bokete1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCCA1CFAA0F8DE7800C0A508 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift5Bokete1/Pods-Swift5Bokete1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swift5Bokete1/Pods-Swift5Bokete1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift5Bokete1/Pods-Swift5Bokete1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDBB205325CAC15500C74950 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		CDBB206C25CAC15800C74950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5AF7F4CAF7D2BDF1DC96DB /* Pods-Swift5Bokete1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		CDBB206D25CAC15800C74950 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D9DD20DB119B4C8FF0CB4E /* Pods-Swift5Bokete1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
