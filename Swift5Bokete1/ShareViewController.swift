@@ -9,12 +9,21 @@ import UIKit
 
 class ShareViewController: UIViewController {
     
-    var
-
+    var resultImage = UIImage()
+    var commentString = String()
+    
+    var screenShotImage = UIImage()
+    
+    
+    @IBOutlet weak var resultImageView: UIImageView!
+    
+    @IBOutlet weak var commentLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
     }
     
 
