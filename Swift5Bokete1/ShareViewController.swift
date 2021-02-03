@@ -33,10 +33,13 @@ class ShareViewController: UIViewController {
         
         //スクリーンショットを撮る
         takeScreenShot()
+        
+        let item = [screenShotImage] as [Any]
+        
         //アクティビティビューに載せてシェアする
+        let activityVC = UIActivityViewController(activityItems: item, applicationActivities: nil)
         
-        
-        
+        present(activityVC, animated: true, completion: nil)
     }
     
     func takeScreenShot(){
@@ -52,6 +55,11 @@ class ShareViewController: UIViewController {
         UIGraphicsEndImageContext()
         
     }
+    
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 
     /*
